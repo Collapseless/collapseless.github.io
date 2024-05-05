@@ -1,0 +1,3 @@
+do
+msgbox("Error: 505, 404, 306. And the computer will die.")
+loop

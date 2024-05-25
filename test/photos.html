@@ -29,31 +29,12 @@
   </div>
 
 <script>
-  let currentIndex = 0;
-  const slides = document.querySelectorAll('.slide');
-  const interval = 2000; // 图片切换间隔（单位：毫秒）
+  let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
+  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
 
-  function showSlide(index) {
-    slides.forEach(slide => {
-      slide.style.display = 'none';
-    });
-    slides[index].style.display = 'block';
+  function moussMove(x,y){
+    
   }
-
-  function nextSlide() {
-    currentIndex++;
-    if (currentIndex >= slides.length) {
-      currentIndex = 0;
-    }
-    showSlide(currentIndex);
-  }
-
-  function startSlideshow() {
-    showSlide(currentIndex);
-    setInterval(nextSlide, interval);
-  }
-
-  startSlideshow();
 </script>
 </body>
 </html>

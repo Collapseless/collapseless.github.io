@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>图片轮播示例</title>
+<style>
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+  <img class="slide" src="image1.jpg" alt="Image 1">
+  <img class="slide" src="image2.jpg" alt="Image 2">
+  <img class="slide" src="image3.jpg" alt="Image 3">
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const interval = 2000; // 图片切换间隔（单位：毫秒）
+
+  function showSlide(index) {
+    slides.forEach(slide => {
+      slide.style.display = 'none';
+    });
+    slides[index].style.display = 'block';
+  }
+
+  function nextSlide() {
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+      currentIndex = 0;
+    }
+    showSlide(currentIndex);
+  }
+
+  function startSlideshow() {
+    showSlide(currentIndex);
+    setInterval(nextSlide, interval);
+  }
+
+  startSlideshow();
+</script>
+</body>
+</html>

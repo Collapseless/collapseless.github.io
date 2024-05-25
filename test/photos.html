@@ -3,38 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>图片轮播示例</title>
-<style>
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    margin: auto;
-  }
-
-  .slide {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: auto;
-  }
-</style>
+<title>test1</title>
 </head>
 <body>
-<div class="slideshow-container">
-  <p class="slide" alt="Image 1">1</p>
-  <p class="slide" alt="Image 2">12</p>
-  <p class="slide" alt="Image 3">123</p>
+<div class="">
+  <p class="slide" id="text1"></p>
   
   </div>
 
 <script>
   let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
-
-  function moussMove(x,y){
-    
+  dd = document.getElementById("text1");
+  function moussMove(){
+    dd.innerHTML = scrolly;
   }
+  mouseMove();
 </script>
 </body>
 </html>

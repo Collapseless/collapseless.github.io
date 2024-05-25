@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="">
-  <input class="slide" id="text1" value='test1--- '>
+  <input class="slide" id="text1" value='test1--- ' online = "cs()">
   
   </div>
 
@@ -14,7 +14,9 @@
   let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
   alert(scrollX,",",scrollY);
-  
+  function cs(){
+    alert(scrollX,",",scrollY);
+}
 </script>
 </body>
 </html>

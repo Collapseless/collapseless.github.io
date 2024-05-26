@@ -12,14 +12,22 @@
   </div>
 
 <script>
-  let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
-  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
-  //alert(scrollX,",",scrollY);
+
   window.onload = function cs(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
     alert(scrollX,",",scrollY);
-    cs()
+    setTimeout(function(){
+      let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
+  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
+  var x = 0;
+  var y = 0;
+  if (x = scrollX && y = scrollY){}else{
+    alert(x+","+y);
+    x = scrollX;
+    y = scrollY;
+  }
+    }, 3000)
 }
 function csd(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;

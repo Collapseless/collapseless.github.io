@@ -7,7 +7,7 @@
 <body>
 <div class="">
   <br><br>
-  <input type ='button' class="slide" id="text1" value='test1--- ' onclick = "cs()">
+  <input type ='button' class="slide" id="text1" value='test1--- ' onclick = "csd()">
   
   </div>
 
@@ -15,11 +15,16 @@
   let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
   //alert(scrollX,",",scrollY);
-  windows.onload = function cs(){
+  window.onload = function cs(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
     alert(scrollX,",",scrollY);
     cs()
+}
+function csd(){
+    let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
+  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
+    alert(scrollX,",",scrollY);
 }
 </script>
 </body>

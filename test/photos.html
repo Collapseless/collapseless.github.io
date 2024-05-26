@@ -12,15 +12,17 @@
   </div>
 
 <script>
-
-  window.onload = function cs(){
+  
+  function cs(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
   var x,y;
   x= 0;
   y =0;
-  if (x = scrollX || y = scrollY){}else{
-    alert(scrollX,",",scrollY);
+  if (x = scrollX || y = scrollY){
+    alert("no");
+  }else{
+    alert("yes");
     }
     cs();
 }
@@ -29,6 +31,9 @@ function csd(){
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
     alert(scrollX,",",scrollY);
 }
+window.onload = function o(){
+    setTineout(cs(),500));
+  }
 </script>
 </body>
 </html>

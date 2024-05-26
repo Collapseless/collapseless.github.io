@@ -16,19 +16,13 @@
   window.onload = function cs(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
   let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
+  var x,y;
+  x= 0;
+  y =0;
+  if (x = scrollX || y = scrollY){}else{
     alert(scrollX,",",scrollY);
-    setTimeout(function aaa(){
-      let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
-  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
-  var x = 0;
-  var y = 0;
-  if (x = scrollX && y = scrollY){}else{
-    alert(x+","+y);
-    x = scrollX;
-    y = scrollY;
-  }
-  aaa();
-    }, 3000);
+    }
+    cs();
 }
 function csd(){
     let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;

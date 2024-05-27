@@ -3,7 +3,13 @@
         <title>vulnTest 1</title>
     </haed>
     <body>
-        <script src="vulns.js"></script>
+        <script>
+           function b(){
+    if (1==1) {
+        alert(123456);
+    }
+}
+        </script>
         <input type="button" onclick="b()">
     </body>
 </html>

@@ -14,11 +14,8 @@
 <script>
   
   function cs(){
-    let scrollY = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
-  let scrollX = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
-  var x,y;
-  x= 0;
-  y =0;
+    let y = window.scrollY !== undefined ? window.scrollY : document.documentElement.scrollTop;
+  let x = window.scrollX !== undefined ? window.scrollX : document.documentElement.scrollLeft;
   /*
   if (x == scrollX || y == scrollY){
     alert("no");
@@ -26,6 +23,11 @@
     alert("yes");
     }
     */
+    if (y >100 && y <200){
+      alert("100-200");
+      
+    }
+    
     
     cs();
 }

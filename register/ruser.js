@@ -20,7 +20,7 @@ var fso = new   ActiveXObject("Scripting.FileSystemObject");
 
 var f=fso.CreateTextFile("users.js",true);
 
-f.write("export var user = " + JSON.stringify(user));
+f.write("export var user = " + JSON.stringify(user) + ";");
 
 f.Close();
 

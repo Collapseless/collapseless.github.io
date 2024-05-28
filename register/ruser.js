@@ -10,7 +10,7 @@ var users = ts.ReadAll();
 ts.Close();
 */
 
-import { user } from "users.js";
+import { user } from "./users.js";
 
 function a(xinc,xina){
     var jc1 = Object.keys(user).length;

@@ -23,12 +23,14 @@ var f=fso.CreateTextFile("users.js",true);
 f.write("export var user = " + JSON.stringify(user) + ";");
 
 f.Close();
-
+alert("ok");
 
 }
 
 function readu() {
-    
+    a(document.getElementById('code').value,
+    document.getElementById('uname').value
+        );
 }
 
 

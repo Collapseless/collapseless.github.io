@@ -26,3 +26,11 @@ f.Close();
 
 
 }
+
+function readu() {
+    
+}
+
+
+
+

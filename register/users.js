@@ -1,1 +1,1 @@
-var users = {};
+export var user = {};

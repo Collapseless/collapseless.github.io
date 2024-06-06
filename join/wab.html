@@ -22,7 +22,7 @@
               if(document.getElementById('year').value>14){// /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/
                 if(document.getElementById('em').value.search(/^(.+)@(.+)$/) != -1){
                   if(document.getElementById('robot').value=='I am not robot.'){
-                    window.location.href='https://j7855u7438.goho.co/join/xay.html?email='+document.getElementById('em').value+'&ago='+document.getElementById('year').value+'&contry='+document.getElementById('one').value;
+                    window.location.href='https://j7855u7438.goho.co/join/xay.html?email='+document.getElementById('em').value+'&ago='+document.getElementById('year').value+'&contry='+document.getElementById('one').value + "&why=" +       document.getElementById('whyy').value;
                   }else{
                   alert('Are you a robot? ');
                 }
@@ -54,6 +54,15 @@
       padding: 15px 100px;
       display: inline-block;
     }
+    textarea{
+      background-color: #333333;
+      cursor: pointer;
+      border: none;
+      color: white;
+      width: 20%;
+      padding: 15px 100px;
+      display: inline-block;
+    }
     input[name=e] {
     background-color: #4CAF50;
     }
@@ -69,7 +78,12 @@
         <h3><font color='red'>*</font>Your region <br> <input type="text" name="" value="" id="two"></h3>
         <h3><font color='red'>*</font>Your postal code <br> <input type="text" name="" value="" id="th"></h3>
         <h3><font color='red'>*</font>Your age<br> <input type="text" name="" value="" id="year"></h3>
-        <h3><font color='red'>*</font>Your Email<br><input type="text" name="" value="" id='em'></h3><br>
+        <h3><font color='red'>*</font>Your Email<br><input type="text" name="" value="" id='em'></h3>
+        <h3>
+          Why do you want to join?<br>
+            <textarea rows="10" cola="20" id="whyy" value=""></textarea>
+        </h3>
+        <br>
         <h3><font color='red'>*</font>Enter English text "I am not robot." <br>
         <input type="text" name="" value="" id='robot'> </h3><br><br>
         <h3><input type="button" name="next" value="next" onclick="xaa()"> </h3>

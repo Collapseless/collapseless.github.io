@@ -4,6 +4,28 @@
     <meta charset="utf-8">
     <title>suggestion</title>
     <link rel="icon" type="image/png" sizes="96x96" href="file/Logo.ico">
+    <script type="text/javascript">
+
+    function sunew(a,b,Idd){
+      var para = document.createElement(a);
+      var node = document.createTextNode(b);
+      para.appendChild(node);
+
+      var element = document.getElementById(Idd);
+      element.appendChild(para);
+    }
+    function getQueryVariable(variable){
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){
+          sunew('li',pair[1],'pp1');
+        }
+      }
+      return(false);
+    }
+    </script>
   </head>
   <body style="background-color: #000000"><font color='white'>
     <script type="text/javascript">
@@ -12,15 +34,15 @@
     }
     function b(){
       if(document.getElementById('ddd').value!=''){
-        alert('send ok!');
-        window.location.href='dnh.html?text='+document.getElementById('ddd').value;
+        alert('The suggestion sent.');
+        //window.location.href='dnh.html?text='+document.getElementById('ddd').value;
       }else{
-        alert('The passage cannot is "" !')
+        alert('Please type your suggestion!')
       }
     }
     </script>
     <style>
-    input[name=asd] {
+    input[type=button] {
     background-color: #4CAF50;
     color: white;
     width: 20%;
@@ -31,17 +53,21 @@
     </style>
     <div class="">
       <h1>suggestion</h1>
-      <h2>Please note that this website is scheduled to be completed in 2038, but the graphics are not perfect or optimized at the beginning.</h2>
-    <h2>How to submit a suggestion: <br>
-    1.None <br><br>
-    *Will be repaired within one week after sending, pay attention to email*<br><br><br>
-    <h4>2.Or Send directly：</h4>
-    <form class="" action="www.baidu.com" method="post">
-      <input type="text" name="" placeholder="Your passage" id="ddd"><br>
-      <input type="button" name="asd" value="Send" onclick="b()">
+
+    <form class="" action="dnh.html">
+      <input type="text" name="suggestion" placeholder="Your passage" id="ddd"><br>
+      <input type="submit" name="" value="Send" onclick="b()">
     </form>
-    2.<s> Call at team. </s></h2>
     <h2><input type="button" name="" value="EXIT" onclick="a()"></h2>
-  </div></font>
+  </div>
+  Other people's did not fix suggestions:
+  <ol id='pp1'>
+    <li>ssssssss</li>
+    <li>Waat</li>
+  </ol>
+
+
+
+</font>
   </body>
 </html>

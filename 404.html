@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Page not found</title>
+  </head>
+  <body align='center' style='background-color:black;' class="bg"><font color='white' class="fc">
+    <h1>Yo?</h1>
+    <style media="screen">
+      input[name=back]{
+        height:40px;
+        width:100px;
+        background-color:#6a1dff;
+        color:white;
+        display: inline-block;
+        border: none;
+        border-radius:20px;
+      }
+      .bg{
+        animation: ii1 20s infinite;
+        -webkit-animation: ii1 20s infinite;
+      }
+      @keyframes ii1 {
+        0% {
+          background:black;
+        }
+        50% {
+          background:white;
+        }
+        100% {
+        background:black;
+        }
+      }
+      @webkit-animation ii1 {
+        0% {
+          background:black;
+        }
+        50% {
+          background:white;
+        }
+        100% {
+        background:black;
+        }
+      }
+
+      .fc{
+        animation: ii2 20s infinite;
+        -webkit-animation: ii2 20s infinite;
+      }
+      @keyframes ii2 {
+        0% {
+          color:white;
+        }
+        50% {
+          color:black;
+        }
+        100% {
+        color:white;
+        }
+      }
+      @webkit-animation ii2 {
+        0% {
+          color:white;
+        }
+        50% {
+          color:black;
+        }
+        100% {
+        color:white;
+        }
+      }
+    </style>
+    <script type="text/javascript">
+      function back(){
+        window.location.href = 'https://collapseless.github.io';
+      }
+    </script>
+    <h3>Why the page not found?<br>
+    We do not know. </h3>
+    <input type="button" name="back" value="Back to home" onclick='back()'>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <p>404 page copyright by Collapseless Team in 2024.</p>
+  </font></body>
+</html>

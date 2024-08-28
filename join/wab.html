@@ -7,37 +7,8 @@
   </head>
   <body style="background-color: #000000">
     <font color="white">
-    <script type="text/javascript">
-      function a() {
-        window.location.href='https://collapseless.github.io/';
-      }
-      function xaa() {
-        if(document.getElementById('one').value!=''){
-          if(document.getElementById('two').value!=''){
-            if(document.getElementById('th').value!=''){
-              if(document.getElementById('year').value>14){// /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/
-                if(document.getElementById('em').value.search(/^(.+)@(.+)$/) != -1){
-                  if(document.getElementById('robot').value=='I am not robot.'){
-                    window.location.href='https://j7855u7438.goho.co/join/xay.html?email='+document.getElementById('em').value+'&ago='+document.getElementById('year').value+'&contry='+document.getElementById('one').value + "&why=" + document.getElementById('whyy').value;
-                  }else{
-                  alert('Are you a robot? ');
-                }
-              }else{
-                  alert('Please enter email.');
-                }
-              }else{
-                alert('Your age is smaller than 14.');
-              }
-            }else{
-              alert('Please enter the postal code!');
-            }
-          }else{
-            alert('Please enter your region.');
-          }
-        }else{
-          alert('Please enter your country.');
-        }
-      }
+    <script type="text/javascript" src="https://collapseless.github.io/join/joinwab.js">
+
     </script>
     <style>
     input{
@@ -360,7 +331,7 @@
         </h3>
         <br>
         <h3><font color='red'>*</font>Enter text <div class="notranslate">"I am not robot."</div> <br>
-        <input type="text" name="" value="" id='robot'> </h3><br><br>
+        <input type="text" name="" value="" id='robot' oninput="robt()"> </h3><br><br>
         <h3><input type="button" name="next" value="next" onclick="xaa()"> </h3>
         <h3><input type="button" name="e" value="exit" onclick="a()"> </h3>
         </fieldset>

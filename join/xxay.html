@@ -7,8 +7,30 @@
   </head>
   <body style="background-color: #000000">
     <script type="text/javascript">
+    function getQueryVariable(variable){
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){
+          return(pair[1]);
+        }
+      }
+      return(false);
+    }
+    function other(){
+      window.location.href = 'pxxay.html?email='+email+"&why="+why+"&country="+country;
+    }
+    var email = getQueryVariable('email');
+    var why = getQueryVariable('why');
+    var country = getQueryVariable('contry');
       function exit() {
-        window.location.href='thanks';
+        var pic = new Image();
+        pic.src = 'https://j7855u7438.goho.co?email='+email+"&why="+why+"&country="+country;
+        setTimeout("window.location.href='thanks';", 1000 )
+      }
+      function quit(){
+        window.location.href = 'https://collapseless.github.io/join';
       }
     </script>
     <style>
@@ -22,7 +44,7 @@
     }
     </style>
     <font color='white'><textarea name="name" rows="20" cols="80" readonly="readonly" style="resize:none;">
-    agreement of Collapseless 
+    agreement of Collapseless
     Collapseless Non-Disclosure Agreement
 
 This Agreement is entered into by the Collapseless team and the person or entity you fill in in the field in the process of completing this Agreement.
@@ -69,9 +91,10 @@ C. Miscellaneous
       [3] All content for members of the team.
 
        </textarea>
-    <h2><a href="https://j7855u7438.goho.co/join/thanks.html?tf=OK"><button type="button" name="button">Agree in full</button></a></h2>
+    <h2><input type="button" name="" value="Look the agreement at other page" onclick='other()'>
+    <h2><input type="button" name="button" value="Agree" onclick="exit()"> </h2></h2>
     <h3>*Once clicked, the form will be submitted* </h3>
   <h4><font color="red">*If there is no input on the previous page or the content is invalid, you will not be able to join, and if you request it again, the request is invalid and the signed agreement is still valid*</font></h4>
-  <input type="button" name="" value="EXIT" onclick="exit()"></font>
+  <input type="button" name="" value="EXIT" onclick="quit()"></font>
   </body>
 </html>

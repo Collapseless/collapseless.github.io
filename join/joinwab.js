@@ -1,6 +1,6 @@
 var rbt = 0;
 function a() {
-  window.location.href='https://collapseless.github.io/';
+  window.location.href=window.location.origin;
 }
 function xaa() {
   if(document.getElementById('one').value!=''){
